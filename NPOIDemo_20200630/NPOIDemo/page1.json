@@ -1,0 +1,182 @@
+{
+    "data": [{
+        "date": "2019-05-15",
+        "status": 0,
+        "next_audit": 0,
+        "weather": 0,
+        "officer": {
+            "main": {
+                "give": "林志偉中校",
+                "recieve": ""
+            },
+            "sub": {
+                "give": "施崇毅中士",
+                "recieve": ""
+            }
+        },
+        "transaction": [{
+                "item": "總值日官席位手冊",
+                "amount": "1冊",
+                "give": true,
+                "recieve": false
+            },
+            {
+                "item": "忠信營區整體安全防護計畫-09(機密)",
+                "amount": "1冊",
+                "give": true,
+                "recieve": false
+            },
+            {
+                "item": "戰情室暨各級值勤人員作業規定-09(機密)",
+                "amount": "1冊",
+                "give": true,
+                "recieve": false
+            },
+            {
+                "item": "忠信大樓辦公室鑰匙",
+                "amount": "7支",
+                "give": true,
+                "recieve": false
+            },
+            {
+                "item": "總值日官及副總值日官臂章",
+                "amount": "各1副",
+                "give": true,
+                "recieve": false
+            },
+            {
+                "item": "公務手機(0932-493406)含手機充電器",
+                "amount": "1",
+                "give": true,
+                "recieve": false
+            },
+            {
+                "item": "正副總值日官緊急狀況處置標準作流程",
+                "amount": "2冊",
+                "give": true,
+                "recieve": false
+            },
+            {
+                "item": "國軍政戰幹部狀況處置行動準據",
+                "amount": "1冊",
+                "give": true,
+                "recieve": false
+            },
+            {
+                "item": "忠信營區警監系統運用說明暨配置圖",
+                "amount": "1冊",
+                "give": true,
+                "recieve": false
+            },
+            {
+                "item": "忠信營區無線電網通信諸元(機密-編號02)(含作業程序)",
+                "amount": "1冊",
+                "give": true,
+                "recieve": false
+            }
+        ],
+        "inventory": [{
+                "title": "無線電機37系列通聯暨清點情形",
+                "items": [{
+                        "item": "RT-2000C主機",
+                        "check": false
+                    },
+                    {
+                        "item": "車裝控制器",
+                        "check": false
+                    },
+                    {
+                        "item": "車裝架底座",
+                        "check": false
+                    },
+                    {
+                        "item": "功率放大器",
+                        "check": false
+                    },
+                    {
+                        "item": "揚聲器",
+                        "check": false
+                    },
+                    {
+                        "item": "電源供應器",
+                        "check": false
+                    },
+                    {
+                        "item": "短射頻導線",
+                        "check": false
+                    },
+                    {
+                        "item": "長射頻導線",
+                        "check": false
+                    },
+                    {
+                        "item": "車裝電源導線",
+                        "check": false
+                    },
+                    {
+                        "item": "車裝天線(含底座)",
+                        "check": false
+                    }
+                ],
+                "liaison": {
+                    "morning": "0700資通管制官林宗賢中校",
+                    "evening": "1900資通管制官林宗賢中校"
+                }
+            },
+            {
+                "title": "無線電機Tetra通聯暨清點情形",
+                "items": [{
+                        "item": "NOKIA THR880i手持機",
+                        "check": false
+                    },
+                    {
+                        "item": "NOKIA THR880i增益天線(短)",
+                        "check": false
+                    },
+                    {
+                        "item": "NOKIA耳機(軟管式)",
+                        "check": false
+                    },
+                    {
+                        "item": "NOKIA皮套",
+                        "check": false
+                    },
+                    {
+                        "item": "NOKIA旅充",
+                        "check": false
+                    },
+                    {
+                        "item": "NOKIA電池",
+                        "check": false
+                    }
+                ],
+                "liaison": {
+                    "morning": "0700資通管制官林宗賢中校",
+                    "evening": "1900資通管制官林宗賢中校"
+                }
+            }
+        ],
+        "others": [{
+            "title": "警監系統妥善狀況",
+            "description": "5個螢幕、45個畫面，畫面均清晰，妥善狀況良好",
+            "remark": "如發現畫面故障請通知作情處賴博興少校協處及檢修(軍線電話:225322、0965396003)\n撰寫方式，如:1-1勤務隊前方故障(無訊號)"
+        }],
+        "note": "<p><strong>壹、每日記事</strong>(摘述人員、時間、地點及執行概況）</p><p style=\"margin-left: 25px;\">0200、0400、0600時監督衛兵副哨換哨交接監督，狀況良好。</p><p style=\"margin-left: 25px;\">0600：升旗。</p><p style=\"margin-left: 25px;\">0800：正、副總值日官交接。</p><p style=\"margin-left: 25px;\">0800、1000、1200、1400、1600、1800、2000、2200、2400時監督衛兵副哨換哨交接，狀況良好。</p><p style=\"margin-left: 25px;\">0730、0900、1030、1130、1400、1630、1730時段副總值日官實施營區巡查及檢視警監系統狀況良好。</p><p style=\"margin-left: 25px;\">1500：電話會談，狀況均正常(啟動碼*62*2261#)</p><table class=\"se-table-size-100 se-table-layout-fixed\"><tbody><tr><td><div style=\"text-align: center;\">總值日官室</div><div style=\"text-align: center;\">林中校</div></td><td><div style=\"text-align: center;\">營門</div><div style=\"text-align: center;\">周下士</div></td><td><div style=\"text-align: center;\">待命班</div><div style=\"text-align: center;\">吳下士</div></td><td><div style=\"text-align: center;\">戰情中心</div><div style=\"text-align: center;\">王少校</div></td></tr><tr><td><div style=\"text-align: center;\">訓測中心</div><div style=\"text-align: center;\">許少校</div></td><td><div style=\"text-align: center;\">資通聯隊</div><div style=\"text-align: center;\">黃士官長</div></td><td><div style=\"text-align: center;\">研析中心</div><div style=\"text-align: center;\">張中尉</div></td><td><div style=\"text-align: center;\">戰具維管課</div><div style=\"text-align: center;\">游中尉</div></td></tr></tbody></table><p style=\"margin-left: 25px;\">1950：高勤官林輝隆中校實施營區巡查，狀況良好。</p><p style=\"margin-left: 25px;\">2100：夜間巡查人員實施勤前教育。</p><p style=\"margin-left: 25px;\">5月5日忠信營區人數統計：</p><p style=\"margin-left: 25px;\">應到：543［指揮部217員、資通聯隊61員、網戰聯隊105員(環境研析中心70技術支援中心35)、訓中76員及支援隊84員］。</p><p style=\"margin-left: 25px;\">實到：68［指揮部14員、資通聯隊4員、網戰聯隊14員(環境研析中心7技術支援中心7)、訓中9員及支援隊27員］。</p><p><strong>貳、注意事項</strong></p><p style=\"margin-left: 25px;\">一、<span style=\"background-color: rgb(241, 241, 241);\">正副總值日官</span>:</p><p style=\"margin-left: 50px;\">1. 熟記報告詞及掌握營區狀況，監看警監畫面及熟稔各類狀況應處作為，參謀長將不定期實施抽點。</p><p style=\"margin-left: 50px;\">2. 於平日部隊運動時間前，督導醫務所醫護人員及救護車於16時就位，並完成相關醫護器材準備。</p><p style=\"margin-left: 50px;\">3. 每日針對出勤車輛，依「軍車出勤行車安全風險因子檢查表」完成檢核並再次對車長及駕駛予以任務提示，始可放行。</p><p style=\"margin-left: 50px;\">4. 負責值日官室周邊環境、設施維護，確維環境整潔、線路整齊、設施妥善，遇損壞狀況立即與業管單位回報。</p><p style=\"margin-left: 50px;\">5. 督導衛哨兵上、下哨交接及清槍時，須配戴大盤帽，上哨前檢查衛哨兵服裝儀容及是否按照標準作業程序完成清槍動作，並須全程在旁監督確維安全。</p><p style=\"margin-left: 50px;\">6. 各巡查人員查察水塔加壓馬達抽水情形，如有異常以電話通知支援隊駐隊官協處。</p><p style=\"margin-left: 50px;\">7. 管制警衛組於平日將升旗臺後方走道LED燈開啟(開啟時間同環場燈時間)、2330時關閉(<span style=\"color: rgb(255, 0, 0);\">指揮官交辦事項</span>)。</p><p style=\"margin-left: 50px;\">8. 督導副控室(225807)，2/1-3/31日1830時、4/1-9/30日1900時、10/1-10/31日1800時、11/1-1/31日1730時開啟環場燈，統一關閉時間2130時，以節約能源(<span style=\"color: rgb(255, 0, 0);\">指揮官交辦事項</span>)。</p><p style=\"margin-left: 50px;\">9. 每日無線電機37C波頻切換依戰情中心通信戰情官通知，候令切換。</p><p style=\"margin-left: 50px;\">10. 要求衛兵針對營門進出精神狀態異常者(酒駕、吸毒等)立即回報總值日官及其部隊長掌握管制(<span style=\"color: rgb(255, 0, 0);\">參謀長交辦事項</span>)。</p><p style=\"margin-left: 25px;\">二、<span style=\"background-color: rgb(241, 241, 241);\">總值日官</span>:</p><p style=\"margin-left: 50px;\">1. 每日0600、1810時帶隊前往升旗台實施升(降)旗，完畢後整隊帶回；另於0645時至餐廳用餐。</p><p style=\"margin-left: 50px;\">2. 掌握營區全般狀況後，遇狀況立即通報高勤官於JUIKER群組回報各級長官知悉。</p><p style=\"margin-left: 50px;\">3. 登載高勤官每日不定時巡視營區狀況。</p><p style=\"margin-left: 50px;\">4. 確實掌握當日及隔日進入營區施工廠商人數(由戰情官提供)並不定期抽查，於早上回報高勤官(<span style=\"color: rgb(255, 0, 0);\">指揮官交辦事項</span>)。</p><p style=\"margin-left: 50px;\">5. 遇上級督導應立即通報高勤官、戰情官及駐隊官。</p><p style=\"margin-left: 25px;\">三、<span style=\"background-color: rgb(241, 241, 241);\">副總值日官</span>:</p><p style=\"margin-left: 50px;\">每日0730、1130及1730時巡視營區、抽查部隊集合狀況及人員服裝儀容後，將問題回報總值日官掌握、記錄於交接事項。</p><p><strong>參、臨時交辦事項</strong></p><p style=\"margin-left: 25px;\">1. 正、副總值日官人員應落實督促總日官室環境清潔，副總日官於每日下班前完成會客室清潔檢查。</p>",
+        "approve": "閱",
+        "pass_in_out": [{
+            "unit": "後勤處",
+            "place": "忠信營區",
+            "firm_leader": {
+                "name": "何思敏",
+                "tel": "0958071622"
+            },
+            "amount": 4,
+            "work": "忠信營區地面草皮修剪",
+            "oversee": {
+                "name": "陳博軍少校",
+                "tel": "0982558183"
+            },
+            "remark": ""
+        }]
+    }]
+}
