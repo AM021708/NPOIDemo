@@ -1,0 +1,29 @@
+{
+  "data": [
+    {
+      "date": "2020-05-15",
+      "status": 0,
+      "duty": {
+        "morning": {
+          "time": "08:00",
+          "work": "",
+          "execute": true,
+          "remark": [
+            { "label": "1. 情態牆顯示畫面：", "type": "file", "value": "" },
+            { "label": "2. 監控系統運作畫面：", "type": "file", "value": "" },
+            { "label": "異常狀況描述：", "type": "text", "value": "" },
+            { "label": "異常通知時間：", "type": "time", "value": "" },
+            { "label": "接話人：", "type": "text", "value": "" }
+          ]
+        },
+        "evening": {
+          "time": "21:30",
+          "work": "記錄警監系統運作狀況：",
+          "execute": false,
+          "remark": ""
+        }
+      },
+      "remark": "1. 未依作業程序執行人員，依規定檢討議處。\n2. 值班人員遇故障狀況，立即反映作情處承參協處。"
+    }
+  ]
+}

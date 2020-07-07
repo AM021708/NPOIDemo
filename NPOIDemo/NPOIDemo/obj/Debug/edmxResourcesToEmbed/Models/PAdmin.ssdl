@@ -1,0 +1,170 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="PAdminModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Dutylog">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="date" Type="varchar" MaxLength="50" />
+    <Property Name="status" Type="int" />
+    <Property Name="next_audit" Type="int" />
+    <Property Name="weather" Type="int" />
+    <Property Name="officer_main_give" Type="varchar" MaxLength="50" />
+    <Property Name="officer_sub_give" Type="varchar" MaxLength="50" />
+    <Property Name="note" Type="varchar" MaxLength="5000" />
+  </EntityType>
+  <EntityType Name="inventory">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="title" Type="varchar" MaxLength="50" />
+    <Property Name="liaisonmorning" Type="varchar" MaxLength="50" />
+    <Property Name="liaisonevening" Type="varchar" MaxLength="50" />
+    <Property Name="dutylog_id" Type="int" />
+  </EntityType>
+  <EntityType Name="inventoryitems">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="item" Type="varchar" MaxLength="50" />
+    <Property Name="checking" Type="tinyint" />
+    <Property Name="inventory_id" Type="int" />
+  </EntityType>
+  <EntityType Name="OTHER">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="title" Type="varchar" MaxLength="50" />
+    <Property Name="description" Type="varchar" MaxLength="250" />
+    <Property Name="remark" Type="varchar" MaxLength="250" />
+    <Property Name="dutylog_id" Type="int" />
+  </EntityType>
+  <EntityType Name="Passinout">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="unit" Type="varchar" MaxLength="50" />
+    <Property Name="place" Type="varchar" MaxLength="50" />
+    <Property Name="firm_leader_name" Type="varchar" MaxLength="50" />
+    <Property Name="firm_leader_tel" Type="varchar" MaxLength="50" />
+    <Property Name="amount" Type="int" />
+    <Property Name="works" Type="varchar" MaxLength="50" />
+    <Property Name="oversee_name" Type="varchar" MaxLength="50" />
+    <Property Name="oversee_tel" Type="varchar" MaxLength="50" />
+    <Property Name="remark" Type="varchar" MaxLength="250" />
+    <Property Name="dutylog_id" Type="int" />
+  </EntityType>
+  <EntityType Name="Trans">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="item" Type="varchar" MaxLength="50" />
+    <Property Name="amount" Type="varchar" MaxLength="50" />
+    <Property Name="give" Type="tinyint" />
+    <Property Name="recieve" Type="tinyint" />
+    <Property Name="dutylog_id" Type="int" />
+  </EntityType>
+  <Association Name="FK_inventory_Dutylog">
+    <End Role="Dutylog" Type="Self.Dutylog" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="inventory" Type="Self.inventory" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Dutylog">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="inventory">
+        <PropertyRef Name="dutylog_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_inventoryitems_inventory">
+    <End Role="inventory" Type="Self.inventory" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="inventoryitems" Type="Self.inventoryitems" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="inventory">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="inventoryitems">
+        <PropertyRef Name="inventory_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_OTHER_Dutylog">
+    <End Role="Dutylog" Type="Self.Dutylog" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="OTHER" Type="Self.OTHER" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Dutylog">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="OTHER">
+        <PropertyRef Name="dutylog_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Passinout_Dutylog">
+    <End Role="Dutylog" Type="Self.Dutylog" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Passinout" Type="Self.Passinout" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Dutylog">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Passinout">
+        <PropertyRef Name="dutylog_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Trans_Dutylog">
+    <End Role="Dutylog" Type="Self.Dutylog" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Trans" Type="Self.Trans" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Dutylog">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Trans">
+        <PropertyRef Name="dutylog_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="PAdminModelStoreContainer">
+    <EntitySet Name="Dutylog" EntityType="Self.Dutylog" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="inventory" EntityType="Self.inventory" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="inventoryitems" EntityType="Self.inventoryitems" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="OTHER" EntityType="Self.OTHER" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Passinout" EntityType="Self.Passinout" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Trans" EntityType="Self.Trans" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_inventory_Dutylog" Association="Self.FK_inventory_Dutylog">
+      <End Role="Dutylog" EntitySet="Dutylog" />
+      <End Role="inventory" EntitySet="inventory" />
+    </AssociationSet>
+    <AssociationSet Name="FK_inventoryitems_inventory" Association="Self.FK_inventoryitems_inventory">
+      <End Role="inventory" EntitySet="inventory" />
+      <End Role="inventoryitems" EntitySet="inventoryitems" />
+    </AssociationSet>
+    <AssociationSet Name="FK_OTHER_Dutylog" Association="Self.FK_OTHER_Dutylog">
+      <End Role="Dutylog" EntitySet="Dutylog" />
+      <End Role="OTHER" EntitySet="OTHER" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Passinout_Dutylog" Association="Self.FK_Passinout_Dutylog">
+      <End Role="Dutylog" EntitySet="Dutylog" />
+      <End Role="Passinout" EntitySet="Passinout" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Trans_Dutylog" Association="Self.FK_Trans_Dutylog">
+      <End Role="Dutylog" EntitySet="Dutylog" />
+      <End Role="Trans" EntitySet="Trans" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

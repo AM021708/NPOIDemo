@@ -1,0 +1,112 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<script type="text/javascript" src="..\Scripts\jquery-3.4.1.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('#btnCreate').click(function () {
+            var url = "api/PAdmin";
+            $.ajax({
+                type: "post",
+                url: url,
+                data: {  },
+                success: function (status) {
+                    if (status == 200) {
+                        alert("Insert success!");
+                    }
+                    else {
+                        alert("Insert Failed...");
+                    }
+                },
+                complete: function (XMLHttpRequest, textStatus) { },
+                error: function () {
+                    alert("Function Failed...");
+                }
+            });
+        });
+        $('#btnDelete').click(function () {
+            var url = "/Home/Delete";
+            $.ajax({
+                type: "delete",
+                url: url,
+                data: {id : 27},
+                success: function (status) {
+                    if (status) {
+                        alert("Delete success!");
+                    }
+                    else {
+                        alert("Delete Failed...");
+                    }
+                },
+                complete: function (XMLHttpRequest, textStatus) { },
+                error: function () {
+                    alert("Function Failed...");
+                }
+            });
+        });
+        $('#btnUpdate').click(function () {
+            var url = "/Home/Update";
+            $.ajax({
+                type: "put",
+                url: url,
+                data: { id: 29 },
+                success: function (status) {
+                    if (status) {
+                        alert("Update success!");
+                    }
+                    else {
+                        alert("Update Failed...");
+                    }
+                },
+                complete: function (XMLHttpRequest, textStatus) { },
+                error: function () {
+                    alert("Function Failed...");
+                }
+            });
+        });
+
+        $('#btnRead').click(function () {
+            var url = "/Home/Read";
+            $.ajax({
+                type: "get",
+                url: url,
+                data: { id: 29 },
+                success: function (status) {
+                    if (status) {
+                        alert("Update success!");
+                    }
+                    else {
+                        alert("Update Failed...");
+                    }
+                },
+                complete: function (XMLHttpRequest, textStatus) { },
+                error: function () {
+                    alert("Function Failed...");
+                }
+            });
+        });
+    });
+</script>
+
+<p id="rData">
+</p>
+
+<div>
+    @using (Html.BeginForm("Download", "Home", FormMethod.Post, new { @class = "form-horizontal", role = "form", id = "PostForm" }))
+    {
+        <input type="submit" value="下載" />
+    }
+</div>
+<div>
+    @using (Html.BeginForm("Monitor", "Home", FormMethod.Post, new { @class = "form-horizontal", role = "form", id = "PostForm" }))
+    {
+        <input type="submit" value="下載Monitor" />
+    }
+</div>
+<div>
+    <button type="button" class="btn btn-primary" id="btnCreate">新增</button>
+    <button type="button" class="btn btn-primary" id="btnDelete">刪除</button>
+    <button type="button" class="btn btn-primary" id="btnUpdate">修改</button>
+    <button type="button" class="btn btn-primary" id="btnRead">查詢</button>
+</div>
